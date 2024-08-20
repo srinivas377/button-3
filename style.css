@@ -1,0 +1,53 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+body {
+    background-image: url("C:\Users\91970\Downloads\batman.jpg");
+    background-size: cover;
+    transition: background-image 0.6s ease-in-out;
+}
+
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text readability */
+}
+
+.container {
+    width: 400px;
+    height: 250px;
+    background-color: rgba(90, 103, 216, 0.85); /* Semi-transparent for background visibility */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.4s ease;
+}
+
+#text {
+    color: #fff;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+#toggleButton {
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: #2b6cb0; /* Button color: a deeper blue */
+    color: #fff;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+#toggleButton:hover {
+    background-color: #2c5282; /* Button color on hover: slightly darker */
+}
